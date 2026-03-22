@@ -10,8 +10,8 @@ if commands:
         CREATE TABLE IF NOT EXISTS tasks(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT UNIQUE,
-            priority TEXT UNIQUE,
-            done INTEGER UNIQUE
+            priority TEXT,
+            done INTEGER
         )
     """)
     not_allowed_names = ["-add", "--priority", "-list", "-done", "-delete"]
