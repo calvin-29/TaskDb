@@ -1,3 +1,6 @@
+# TaskDb
+A command-line task manager. Add, list, complete and delete tasks stored in a local SQLite database.
+
 usage: main.py [-h] [-add ADD] [--priority PRIORITY] [-list] [-done DONE] [-r R] [-delete DELETE] [-clear]
 
 A simple script to manage tasks in a db.
@@ -23,7 +26,6 @@ Showing the tasks in a table form:
 
 Checking a task as done:
     python main.py -done 1
-    python main.py -d 1
 
 Checking a task as not done:
     python main.py -r 1
@@ -33,5 +35,5 @@ Deleting a task:
     python main.py -d 1
 
 Clearing all tasks:
-    python main.py -clear 1
-    python main.py -c 1
+    python main.py -clear
+    python main.py -c
