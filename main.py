@@ -14,13 +14,13 @@ cursor.execute("""
     )
 """)
 
-parser.add_argument('-add', type=str, help='Add a task')
+parser.add_argument('-add', '-a', type=str, help='Add a task')
 parser.add_argument('--priority', '--p', type=str, help='Put a priority level for task (used with -add).')
-parser.add_argument('-list', action="store_true", help='List all the task by order of priority.')
+parser.add_argument('-list', '-l', action="store_true", help='List all the task by order of priority.')
 parser.add_argument('-done', type=int, help='Check a task as done')
 parser.add_argument('-r', type=int, help='Check a task as not done')
-parser.add_argument('-delete', type=int, help='Delete a task')
-parser.add_argument('-clear', action="store_true", help='Delete all tasks')
+parser.add_argument('-delete', '-d', type=int, help='Delete a task')
+parser.add_argument('-clear', '-c', action="store_true", help='Delete all tasks')
 
 args = parser.parse_args()
 
